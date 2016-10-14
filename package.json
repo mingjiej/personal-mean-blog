@@ -1,0 +1,29 @@
+{
+  "name": "personal-blog-mean-project",
+  "version": "1.0.0",
+  "description": "MEAN project to create a personal blog",
+  "main": "app.js",
+  "scripts": {
+    "start" : "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mingjiej/personal-mean-blog.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Mingjie Jin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mingjiej/personal-mean-blog/issues"
+  },
+  "homepage": "https://github.com/mingjiej/personal-mean-blog#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.1.2"
+  }
+}
