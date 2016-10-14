@@ -5,14 +5,21 @@ var ctrlArticle = require('../controllers/article-controllers.js');
 router
       .route('/articles')
       .get(ctrlArticle.ArticleGetAll)
-
+      .post(ctrlArticle.ArticleAddOne)
 //get all article with same subject;
-
-
+router
+      .route('/articles/:subject')
+      .get(ctrlArticle.ArticleGetAllBySubject)
 //get most recent updated article
 
 
 //get one article with id
+router
+      .route('/article/:articleId')
+      .get(ctrlArticle.ArticleById)
 
+//update one article
+router.route('/article')
+      .post(ctrlArticle.updateOneArticle)
 
 module.exports = router;
