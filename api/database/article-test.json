@@ -1,0 +1,70 @@
+[{
+  "text" : "article text of article-title-1, article-subtitle-1, on chapter 1, paragraph 1",
+  "title" : "article-title-1",
+  "subtitle" : "article-subtitle-1",
+  "chapter" : 1,
+  "paragraph" : 1,
+  "createdTime" : "2016-10-13",
+  "LastModifyTime" : "2016-10-13",
+  "creatorName" : "name"
+},
+{
+  "text" : "article text of article-title-1, article-subtitle-1, on chapter 1, paragraph 2",
+  "title" : "article-title-1",
+  "subtitle" : "article-subtitle-1",
+  "chapter" : 1,
+  "paragraph" : 2,
+  "createdTime" : "2016-10-13",
+  "LastModifyTime" : "2016-10-13",
+  "creatorName" : "name"
+},
+{
+  "text" : "article text of article-title-1, article-subtitle-1, on chapter 1, paragraph 3",
+  "title" : "article-title-1",
+  "subtitle" : "article-subtitle-1",
+  "chapter" : 1,
+  "paragraph" : 3,
+  "createdTime" : "2016-10-13",
+  "LastModifyTime" : "2016-10-13",
+  "creatorName" : "name"
+},
+{
+  "text" : "article text of article-title-1, article-subtitle-1, on chapter 2, paragraph 1",
+  "title" : "article-title-1",
+  "subtitle" : "article-subtitle-1",
+  "chapter" : 2,
+  "paragraph" : 1,
+  "createdTime" : "2016-10-13",
+  "LastModifyTime" : "2016-10-13",
+  "creatorName" : "name"
+},
+{
+  "text" : "article text of article-title-2, article-subtitle-2, on chapter 1, paragraph 1",
+  "title" : "article-title-2",
+  "subtitle" : "article-subtitle-2",
+  "chapter" : 1,
+  "paragraph" : 1,
+  "createdTime" : "2016-10-13",
+  "LastModifyTime" : "2016-10-13",
+  "creatorName" : "name"
+},
+{
+  "text" : "article text of article-title-2, article-subtitle-2, on chapter 1, paragraph 2",
+  "title" : "article-title-1",
+  "subtitle" : "article-subtitle-1",
+  "chapter" : 1,
+  "paragraph" : 2,
+  "createdTime" : "2016-10-13",
+  "LastModifyTime" : "2016-10-13",
+  "creatorName" : "name"
+},
+{
+  "text" : "article text of article-title-2, article-subtitle-2, on chapter 2, paragraph 3",
+  "title" : "article-title-2",
+  "subtitle" : "article-subtitle-2",
+  "chapter" : 2,
+  "paragraph" : 3,
+  "createdTime" : "2016-10-13",
+  "LastModifyTime" : "2016-10-13",
+  "creatorName" : "name"
+}]
