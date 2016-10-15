@@ -38,9 +38,28 @@ module.exports.ArticleAddOne = function(req, res) {
 
 }
 
-module.exports.ArticleGetAllBySubject = function(req, res) {
-  console.log("I will get all articles with same subject of " + req.params.subject);
-  res.status(200).json({"message" : "I will get all articles with same subject of " + req.params.subject});
+module.exports.ArticleGetAllByTitle = function(req, res) {
+  //console.log("I will get all articles with same subject of " + req.params.subject);
+  //res.status(200).json({"message" : "I will get all articles with same subject of " + req.params.subject});
+  var title = req.params.articleTitle;
+  Article.find({"title" : title}).exec(function(err, articles) {
+    var response = {
+      status : 200,
+      message : articles
+    };
+    if(err) {
+      console.log("Error finding articles");
+      response.status = 500
+      response.message = err;
+    } else if (!articles){
+      console.log("cannot found article with title: " + articleTitle);
+      response.status = 404
+      response.message = {
+        "message" : "article with title cannot found"
+      };
+    }
+    res.status(response.status).json(response.message);
+  });
 }
 
 module.exports.ArticleById = function(req, res) {
