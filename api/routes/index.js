@@ -17,6 +17,7 @@ router
 router
       .route('/article/:articleId')
       .get(ctrlArticle.ArticleById)
+      .delete(ctrlArticle.ArticleDeleteById)
 
 //update one article
 router.route('/article')

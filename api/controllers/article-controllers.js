@@ -44,11 +44,41 @@ module.exports.ArticleGetAllBySubject = function(req, res) {
 }
 
 module.exports.ArticleById = function(req, res) {
-  console.log("I will get the article with id of " + req.params.articleId);
-  res.status(200).json({"message" : "I will get all articles with id of " + req.params.articleId});
+  var id = req.params.articleId;
+  Article.findById(id).exec(function(err, article) {
+    var response = {
+      status : 200,
+      message : article
+    };
+    if(err) {
+      console.log("Error finding article");
+      response.status = 500
+      response.message = err;
+    } else if (!article){
+      console.log("cannot found article with id: " + id);
+      response.status = 404
+      response.message = {
+        "message" : "article id cannot found"
+      };
+    }
+    res.status(response.status).json(response.message);
+  });
 }
 
 module.exports.updateOneArticle = function(req, res) {
   console.log("I will update the article");
   res.status(200).json({"message" : "I will update article"});
+}
+
+module.exports.ArticleDeleteById = function(req, res) {
+  var id = req.params.articleId;
+  Article.findByIdAndRemove(id).exec(function(err, article) {
+    if(err) {
+      console.log("Error finding and deleting article");
+      res.status(404).json(err);
+    } else {
+      console.log("deleted article with id " + id);
+      res.status(204).json();
+    }
+  });
 }
