@@ -3,6 +3,7 @@ var mongoose = require('mongoose');
 var articleSchema = new mongoose.Schema({
   text : String,
   title : String,
+  subtitle : String,
   chapter : Number,
   paragraph : Number,
   creatorName : String,
