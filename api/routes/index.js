@@ -9,7 +9,7 @@ router
 //get all article with same subject;
 router
       .route('/articles/subject/:articleTitle')
-      .get(ctrlArticle.ArticleGetAllByTitle)
+      .get(ctrlArticle.ArticleGetAllByTitle) //DONE
 //get most recent updated article
 
 

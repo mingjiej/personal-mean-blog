@@ -3,7 +3,7 @@ var Article = mongoose.model('Article');
 
 module.exports.ArticleGetAll = function(req, res) {
   //console.log("I will return all articles");
-  Article.find().exec(function(err, articles){
+  Article.find().sort('-LastModifyTime').exec(function(err, articles){
     if(err) {
       console.log("Error finding articles");
       res.status(400).json({"message" : "error on finding all articles"})
