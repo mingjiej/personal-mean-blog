@@ -1,6 +1,17 @@
+var mongoose = require('mongoose');
+var Article = mongoose.model('Article');
+
 module.exports.ArticleGetAll = function(req, res) {
-  console.log("I will return all articles");
-  res.status(200).json({"message" : "I will return all articles"});
+  //console.log("I will return all articles");
+  Article.find().exec(function(err, articles){
+    if(err) {
+      console.log("Error finding articles");
+      res.status(400).json({"message" : "error on finding all articles"})
+    } else {
+      console.log("Found articles : " + articles.length);
+      res.status(200).json(articles);
+    }
+  });
 }
 
 module.exports.ArticleAddOne = function(req, res) {

@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var dburl = 'mongodb://localhost:27017/blog'
+var dburl = 'mongodb://localhost:27017/blog-test'
 
 mongoose.connect(dburl);
 mongoose.connection.on('connected', function(){

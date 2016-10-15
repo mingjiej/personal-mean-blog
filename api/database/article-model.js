@@ -7,7 +7,10 @@ var articleSchema = new mongoose.Schema({
   paragraph : Number,
   creatorName : String,
   createdTime : String,
-  LastModifyTime : String
+  LastModifyTime : {
+    type : Date,
+    "default" : Date.now
+  }
 });
 
-mongoose.model('Article', articleSchema);
+mongoose.model('Article', articleSchema, 'article');
