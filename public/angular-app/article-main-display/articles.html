@@ -1,12 +1,15 @@
-<h1>{{vm.title}}</h1>
-<ul>
+<!-- <h1>{{vm.title}}</h1> -->
+<!-- <ul>
     <li ng-repeat = "article in vm.articles">
         <a ng-href = "#/articles/{{article._id}}">
             {{article.title}}
         </a>
     </li>
-</ul>
+</ul> -->
+<div ng-repeat = "article in vm.articles" class="row">
+    <div class="col-xs-0 col-sm-0 col-md-2 col-lg-2">
 
-<div class="main-articel-section" ng-repeat = "article in vm.articles">
-    <!-- {{article.title}} -->
+    </div>
+    <div class="main-articel-section col-xs-12 col-sm-12 col-md-8 col-lg-8">
+    </div>
 </div>
