@@ -1,16 +1,17 @@
 angular.module('main-page-article').factory('mainArticleFactory', mainArticleFactory);
 
 function mainArticleFactory($http) {
+
     return {
         allArticle : allArticle,
-        oneArticleById : oneArticleById
-    }
+        viewArticleById : viewArticleById
+    };
 
     function allArticle() {
         return $http.get('/api/articles').then(complete).catch(failed);
     }
 
-    function oneArticleById(id) {
+    function viewArticleById(id) {
         return $http.get('/api/articles/' + id).then(complete).catch(failed);
     }
 

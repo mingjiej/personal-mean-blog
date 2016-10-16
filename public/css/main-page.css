@@ -1,0 +1,11 @@
+.main-articel-section {
+    width: 800px;
+    margin: 0 auto;
+    height: 100px;
+    background-color: red;
+    margin-top: 20px;
+}
+
+body {
+    background-color: rgb(200, 200, 200);
+}

@@ -5,10 +5,9 @@ function config($routeProvider) {
         templateUrl : 'angular-app/article-main-display/articles.html',
         controller: ArticleController,
         controllerAs : 'vm'
+    }).when('/articles/:id', {
+        templateUrl : 'angular-app/article-read/article-read.html',
+        controller: ArticleController,
+        controllerAs : 'vm'
     });
-    // when('/articles/:id', {
-    //     templateUrl : 'angular-app/hotel-list/hotels.html',
-    //     controller: ArticleController,
-    //     controllerAs : 'vm'
-    // });
 }

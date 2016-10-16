@@ -2,6 +2,7 @@
 <html ng-app = "main-page-article">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="css/main-page.css">
         <title>My Blog</title>
     </head>
     <body>
@@ -9,12 +10,13 @@
         <p>
             This is the home page.
         </p>
-        <div class="" ng-view></div>
+        <div ng-view></div>
         <script src = "jquery/jquery-3.1.1.min.js"></script>
         <script src = "node_modules/angular/angular.js"></script>
         <script src = "node_modules/angular-route/angular-route.js"></script>
         <script src = "angular-app/app.js"></script>
         <script src = "angular-app/article-main-display/article-main-display-controller.js"></script>
+        <!-- <script src = "angular-app/article-read/article-read-chapter.js"></script> -->
         <script src = "angular-app/article-data-factory/article-data-factory.js"></script>
         <footer></footer>
     </body>
