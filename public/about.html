@@ -23,7 +23,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a class = "page-scroll" href="./about.html">About</a></li>
+                            <li><a class = "page-scroll" href="#about">About</a></li>
                             <li><a class = "page-scroll" href="#work">Working Experience</a></li>
                             <li><a class = "page-scroll" href="#project">Projects</a></li>
                             <li><a class = "page-scroll" href="#resources">Other Resource</a></li>
@@ -44,7 +44,7 @@
                 </div>
             </nav>
         </header>
-        <div class="featured col-xs-12 col-sm-12 col-lg-12 col-md-12 .div-inner-remove">
+        <div id = "about" class="featured col-xs-12 col-sm-12 col-lg-12 col-md-12 .div-inner-remove">
             <div class = "col-xs-12 col-lg-6 col-md-6 col-sx-12 self-icon-wrapper .div-inner-remove">
                 <span class="helper"></span><img class = "self-icon" src="./images/self-icon.jpg" alt="mingjie-self-icon" />
             </div>
@@ -64,20 +64,32 @@
             <p class="section-title">Work experience</p>
             <div class = "experience-wrapper">
                 <div class = "experience-item" id = "experience-item-1">
-                </div>
-                <div class = "inner-space" id = "inner-item-1">
+                    <img id = "fae-icon" src="/images/faemaps.jpg" alt="" />
+                    <div class = "experience-intro-wrapper">
+                        <p class="experience-intro-text">Fae Interactive</p>
+                        <p class="experience-intro-text">iOS development intern</p>
+                        <p class="experience-intro-text">2016.5 - 2016.8</p>
+                    </div>
                 </div>
                 <div class = "experience-item" id = "experience-item-2">
-                </div>
-                <div class = "inner-space" id = "inner-item-2">
+                    <img id = "fae-icon" src="/images/incuvationLabs.jpg" alt="" />
+                    <div class = "experience-intro-wrapper">
+                        <p class="experience-intro-text">Incuvation Labs</p>
+                        <p class="experience-intro-text">Mobile development intern</p>
+                        <p class="experience-intro-text">2016.1 - 2016.5</p>
+                    </div>
                 </div>
                 <div class = "experience-item" id = "experience-item-3">
-                </div>
-                <div class = "inner-space" id = "inner-item-3">
+                    <img id = "fae-icon" src="/images/apptosucceed.jpg" alt="" />
+                    <div class = "experience-intro-wrapper">
+                        <p class="experience-intro-text">AppToSucceed, LLC</p>
+                        <p class="experience-intro-text">Web development intern</p>
+                        <p class="experience-intro-text">2016.3 - 2016.5</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12 outer-space">
+        <div id = "outer-space-1" class="col-xs-12 col-sm-12 col-lg-12 col-md-12 outer-space">
             <div class="col-xs-0 col-sm-0 col-lg-1 col-md-1"></div>
             <div class="col-xs-12 col-sm-12 col-lg-10 col-md-10 outer-space-wrapper">
             </div>
@@ -88,15 +100,9 @@
             <div class = "experience-wrapper">
                 <div class = "experience-item" id = "experience-item-4">
                 </div>
-                <div class = "inner-space" id = "inner-item-4">
-                </div>
                 <div class = "experience-item" id = "experience-item-5">
                 </div>
-                <div class = "inner-space" id = "inner-item-5">
-                </div>
                 <div class = "experience-item" id = "experience-item-6">
-                </div>
-                <div class = "inner-space" id = "inner-item-6">
                 </div>
             </div>
         </div>
@@ -110,16 +116,28 @@
             <p class="section-title">Other resources</p>
             <div class = "experience-wrapper">
                 <div class = "experience-item" id = "experience-item-7">
-                </div>
-                <div class = "inner-space" id = "inner-item-7">
+                    <img id = "fae-icon" src="/images/resume-icon.png" alt="" />
+                    <!-- <div class = "experience-intro-wrapper">
+                        <p class="experience-intro-text">Fae Interactive</p>
+                        <p class="experience-intro-text">iOS development intern</p>
+                        <p class="experience-intro-text">2016.5 - 2016.8</p>
+                    </div> -->
                 </div>
                 <div class = "experience-item" id = "experience-item-8">
-                </div>
-                <div class = "inner-space" id = "inner-item-8">
+                    <img id = "fae-icon" src="/images/linkedin.jpg" alt="" />
+                    <!-- <div class = "experience-intro-wrapper">
+                        <p class="experience-intro-text">Fae Interactive</p>
+                        <p class="experience-intro-text">iOS development intern</p>
+                        <p class="experience-intro-text">2016.5 - 2016.8</p>
+                    </div> -->
                 </div>
                 <div class = "experience-item" id = "experience-item-9">
-                </div>
-                <div class = "inner-space" id = "inner-item-9">
+                    <img id = "fae-icon" src="/images/github.jpg" alt="" />
+                    <!-- <div class = "experience-intro-wrapper">
+                        <p class="experience-intro-text">Fae Interactive</p>
+                        <p class="experience-intro-text">iOS development intern</p>
+                        <p class="experience-intro-text">2016.5 - 2016.8</p>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -132,5 +150,31 @@
         <script src = "jquery/jquery.easing.min.js"></script>
         <script src = "jquery/scrolling-nav.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $("#experience-item-1").click(function(){
+                if($("#outer-space-1").css("display") == "none") {
+                    if($(window).width() >= 992) {
+                        $("#outer-space-1").css("display", "block");
+                        $('html,body').animate({
+                            scrollTop: $("#outer-space-1").offset().top - $(window).height() / 2 + $("#outer-space-1").height() / 2},
+                            'slow');
+                    }
+                } else {
+                    $("#outer-space-1").css("display", "none");
+                }
+            });
+            $('#experience-item-7').click(function(){
+                window.open('document/Resume.pdf');
+                return false;
+            });
+            $('#experience-item-8').click(function(){
+                window.open('https://www.linkedin.com/in/mingjie-jin-266a94a2');
+                return false;
+            });
+            $('#experience-item-9').click(function(){
+                window.open('https://github.com/mingjiej');
+                return false;
+            });
+        </script>
     </body>
 </html>
