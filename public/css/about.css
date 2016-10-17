@@ -36,7 +36,7 @@
 
 .self-icon {
     vertical-align: middle;
-    width: 200px;
+    width: 300px;
     height: auto;
     margin: 0 auto;
     border-radius: 50%;
@@ -75,6 +75,26 @@
 }
 
 .div-work-experience {
+    height: 100%;
+    padding-top: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.div-project {
+    height: 100%;
+    padding-top: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.div-other-resource {
+    height: 100%;
+    padding-top: 100px;
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 0px !important;
@@ -101,11 +121,12 @@
 }
 
 .experience-item {
-    height: 300px;
+    height: 400px;
     border: 2px solid red;
 }
 
 .experience-wrapper {
+    margin-top: 100px;
     margin: 0 auto;
     border: 2px solid black;
 }
