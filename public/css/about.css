@@ -1,0 +1,107 @@
+.featured {
+    background-image: url("../images/about-header-image-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.self-icon-wrapper {
+    height: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    text-align: center;
+}
+
+.intro-wrapper {
+    height: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    text-align: center;
+}
+
+.text-board-wrapper {
+    width: 80%;
+    height: 250px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    padding: 50px 30px 50px 30px;
+    background-color: rgba(30, 30, 30, 0.65);
+}
+
+.text-board {
+    /*height: 100%;*/
+    width: 90%;
+    text-align: left;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.self-icon {
+    vertical-align: middle;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.intro-text {
+    font-size: 30px;
+    font-size: 2vw;
+    color: rgb(230, 230, 230);
+}
+
+@media (max-width : 991px) {
+    .self-icon-wrapper {
+        height: 50%;
+    }
+    .intro-wrapper {
+        height: 50%;
+    }
+    .text-board-wrapper {
+        height: 80%;
+        padding: 10px 30px 10px 30px;
+    }
+    .text-board {
+        text-align: center;
+    }
+    .intro-text {
+        font-size: 30px;
+        font-size: 3vw;
+    }
+}
+
+@media (max-width : 567px) {
+    .text-board-wrapper {
+        width: 90%;
+    }
+    .intro-text {
+        font-size: 30px;
+        font-size: 4vw;
+    }
+}
+
+@media (min-width : 992px) {
+    .self-icon-wrapper {
+        height: 100%;
+    }
+    .intro-wrapper {
+        height: 100%;
+    }
+}
