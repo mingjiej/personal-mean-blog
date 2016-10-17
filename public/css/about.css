@@ -6,6 +6,10 @@
     z-index: -1;
 }
 
+li {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
 .self-icon-wrapper {
     height: 100%;
     text-align: center;
@@ -51,6 +55,7 @@
 .intro-text {
     font-size: 30px;
     font-size: 2vw;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: rgb(230, 230, 230);
 }
 
@@ -76,7 +81,6 @@
 
 .div-work-experience {
     padding-top: 50px;
-    /*min-height: 900px;*/
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 0px !important;
@@ -93,8 +97,7 @@
 }
 
 .div-other-resource {
-    height: 100%;
-    padding-top: 100px;
+    padding-top: 50px;
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 0px !important;
@@ -122,8 +125,7 @@
 }
 
 .experience-item {
-    /*height: 600px;*/
-    /*border: 2px solid red;*/
+    border: 2px solid red;
     text-align: center;
     padding-top: 100px;
     cursor: pointer;
@@ -132,39 +134,58 @@
 .experience-wrapper {
     margin-top: 100px;
     margin: 0 auto;
-    /*background-color: rgb(240, 240, 240);*/
-    /*border: 2px solid black;*/
+    border: 2px solid black;
 }
 
 #work {
-    background-color: rgb(240, 240, 240);
+    background: rgba(107,130,245,1);
+    background: -moz-linear-gradient(-45deg, rgba(107,130,245,1) 0%, rgba(74,97,232,1) 34%, rgba(15,38,208,1) 94%, rgba(9,32,206,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(107,130,245,1)), color-stop(34%, rgba(74,97,232,1)), color-stop(94%, rgba(15,38,208,1)), color-stop(100%, rgba(9,32,206,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(107,130,245,1) 0%, rgba(74,97,232,1) 34%, rgba(15,38,208,1) 94%, rgba(9,32,206,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(107,130,245,1) 0%, rgba(74,97,232,1) 34%, rgba(15,38,208,1) 94%, rgba(9,32,206,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(107,130,245,1) 0%, rgba(74,97,232,1) 34%, rgba(15,38,208,1) 94%, rgba(9,32,206,1) 100%);
+    background: linear-gradient(135deg, rgba(107,130,245,1) 0%, rgba(74,97,232,1) 34%, rgba(15,38,208,1) 94%, rgba(9,32,206,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b82f5', endColorstr='#0920ce', GradientType=1 );', endColorstr='#0812cc', GradientType=1 );
+}
+
+#resources {
+    background: rgba(198,223,235,1);
+    background: -moz-linear-gradient(45deg, rgba(198,223,235,1) 0%, rgba(178,203,220,1) 27%, rgba(168,220,255,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(198,223,235,1)), color-stop(27%, rgba(178,203,220,1)), color-stop(100%, rgba(168,220,255,1)));
+    background: -webkit-linear-gradient(45deg, rgba(198,223,235,1) 0%, rgba(178,203,220,1) 27%, rgba(168,220,255,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(198,223,235,1) 0%, rgba(178,203,220,1) 27%, rgba(168,220,255,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(198,223,235,1) 0%, rgba(178,203,220,1) 27%, rgba(168,220,255,1) 100%);
+    background: linear-gradient(45deg, rgba(198,223,235,1) 0%, rgba(178,203,220,1) 27%, rgba(168,220,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6dfeb', endColorstr='#a8dcff', GradientType=1 );
 }
 
 .section-title {
     text-align: center;
     font-size: 40px;
     line-height: 100px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
 }
 
 .experience-intro-text {
-    font-size: 25px;
+    font-size: 20px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
 }
 
 .experience-intro-wrapper {
-    /*display: block;*/
     height: 350px;
     padding-top : 100px;
     text-align: center;
     width: 100%;
-    /*border: 2px solid green;*/
+    border: 2px solid green;
 }
 
-#fae-icon {
-    width: 200px;
+#icon {
+    width: 180px;
     height: auto;
     margin: 0 auto;
-    /*vertical-align:text-top;*/
-    border-radius: 45px;
+    border-radius: 40px;
     display: block;
 }
 @media (max-width : 567px) {
@@ -196,17 +217,24 @@
         min-height: 900px;
         overflow: hidden;
     }
+    .div-other-resource {
+        height: 100%;
+        min-height: 900px;
+        overflow: hidden;
+    }
 }
 
-@media (max-width : 991px)) {
+@media (max-width : 991px) {
     .experience-wrapper {
         width: 100%
     }
     .experience-item {
         width: 100%
-        /*display: block;*/
     }
     .div-work-experience {
-        overflow: hidden;
+        overflow: auto;
+    }
+    .div-other-resource {
+        overflow: auto;
     }
 }
