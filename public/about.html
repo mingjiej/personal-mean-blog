@@ -187,17 +187,20 @@
                                 <img class = "project-icon" src="images/multimedia-icon.png" alt="" />
                             </div>
                             <div class = "project-description">
-                                <p>Multimedia Processing of Egocentric Videos</p>
-                                <p>April 2016 – May 2016</p>
+                                <p class = "project-title">Multimedia Processing of Egocentric Videos</p>
+                                <p class = "project-date">April 2016 – May 2016</p>
                             </div>
+                        </div>
+                        <div class = "project-intro" style="display : none">
+
                         </div>
                         <div class = "project-item" id = "project-item-2">
                             <div class = "project-icon-wrapper">
                                 <img class = "project-icon" style="border-radius : 50%;" src="images/weather-app.png" alt="" />
                             </div>
                             <div class = "project-description">
-                                <p>Weather Forecast Website and iOS App</p>
-                                <p>October 2015 – December 2015</p>
+                                <p class = "project-title">Weather Forecast Website and iOS App</p>
+                                <p class = "project-date">October 2015 – December 2015</p>
                             </div>
                         </div>
                         <div class = "project-item" id = "project-item-3">
@@ -205,8 +208,8 @@
                                 <img class = "project-icon" src="images/gem-app.com.png" alt="" />
                             </div>
                             <div class = "project-description">
-                                <p>iOS Mobile Game Development</p>
-                                <p>August 2015 – December 2015</p>
+                                <p class = "project-title">iOS Mobile Game Development</p>
+                                <p class = "project-date">August 2015 – December 2015</p>
                             </div>
                         </div>
                         <div class = "project-item" id = "project-item-4">
@@ -214,8 +217,8 @@
                                 <img class = "project-icon" style="border-radius : 50%;" src="images/networking.jpg" alt="" />
                             </div>
                             <div class = "project-description">
-                                <p>Server-Client Communication System</p>
-                                <p>January 2015 – May 2015</p>
+                                <p class = "project-title">Server-Client Communication System</p>
+                                <p class = "project-date">January 2015 – May 2015</p>
                             </div>
                         </div>
                     </div>
@@ -298,11 +301,48 @@
                 return false;
             });
             $('.project-item').click(function(){
-                $('#project').animate({
-                    'marginLeft' : "-=" + $(window).width() * 0.7
-                }, 'slow', function() {
+                //hide other div
+                if($('#project-item-2').is(":hidden")) {
+                    $('.project-intro').fadeOut(500, function() {
+                        $('#project-item-1').find('.project-title').text("Multimedia Processing of Egocentric Videos")
+                        $('#project-item-1').find('.project-date').text("April 2016 – May 2016")
+                        $('#project-item-1').find('.project-icon').attr("src", "images/multimedia-icon.png")
 
-                });
+                        $('#project-item-2').find('.project-title').text("Weather Forecast Website and iOS App")
+                        $('#project-item-2').find('.project-date').text("October 2015 – December 2015")
+                        $('#project-item-2').find('.project-icon').attr("src", "images/weather-app.png")
+
+                        $('#project-item-3').find('.project-title').text("iOS Mobile Game Development")
+                        $('#project-item-3').find('.project-date').text("August 2015 – December 2015")
+                        $('#project-item-3').find('.project-icon').attr("src", "images/gem-app.com.png")
+
+                        $('#project-item-4').find('.project-title').text("Server-Client Communication System")
+                        $('#project-item-4').find('.project-date').text("January 2015 – May 2015")
+                        $('#project-item-4').find('.project-icon').attr("src", "images/networking.jpg")
+
+                        $('#project-item-2').fadeIn(500);
+                        $('#project-item-3').fadeIn(500);
+                        $('#project-item-4').fadeIn(500);
+                    });
+                    // make every bullect right;
+
+                } else {
+                    $('#project-item-1').find('.project-title').text($(this).find('.project-title').text())
+                    $('#project-item-1').find('.project-date').text($(this).find('.project-date').text())
+                    $('#project-item-1').find('.project-icon').attr("src", $(this).find('.project-icon').attr("src"))
+                    $('#project-item-1').find('.project-icon').css("border-radius", "50%")
+                    $('#project-item-2').fadeOut("slow");
+                    $('#project-item-3').fadeOut("slow");
+                    $('#project-item-4').fadeOut("slow");
+                    var content1 = "<div class='project-intro-center'><ul><li>Generated egocentric highlight video clip base on change of color, audio and motion in original video (Java)</li><li>Implemented SIFT algorithm in Java, to find given image from the original video</li><li>Improved SIFT algorithm with multithread programming and reduced the algorithm process time by 70%</li><li>Elevated video quality by stabilizing video and removing shake in the movie, base on motion between frames</li></ul></div>"
+                    var content4 = "<div class='project-intro-center'><ul><li>Implemented program to realize three-way-handshake (C)</li><li>Built a program to send and receive data package, using Go-Back-N ARQ</li><li>Built a program to send, broadcast or relay UDP package between server and clients</li></ul></div>"
+                    if(this.id == 'project-item-1') {
+                        $('.project-intro').html(content1);
+                    } else if (this.id == 'project-item-4') {
+                        $('.project-intro').html(content4);
+                    }
+                    $('.project-intro').delay(600).fadeIn("slow");
+                }
             });
         </script>
     </body>
